@@ -1,0 +1,29 @@
+.container {
+
+    width:800px;
+    background-color: aqua;
+     @include grid;
+
+    &__content{
+       
+        width:60%;
+        background-color: bisque;
+        
+    }
+
+    &__paragraphe{
+
+        @extend %text;
+
+        &--red{
+            color:red !important;
+        }
+
+        &--bold{
+
+            font-weight: bolder;
+        }
+    }
+
+    
+}
